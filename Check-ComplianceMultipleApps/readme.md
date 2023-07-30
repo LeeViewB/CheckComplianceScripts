@@ -20,14 +20,17 @@ The script will allow you to do 4 different compliance checks for one or multipl
 
 # Examples
 ### 1. If you want to ensure that the installed **version** of the following software installed in **HKLM** is equal to or newer:
+
 - Google Chrome  = 116.0.5790.110
 - Notepad++ = 9.5.4
 - Test App  = 116.0.5790.110
 Make sure to:
+```
 - on row 5, set 
 > $userProfileApp = $false
 - on row 6, set 
 > $isAppInstallCheckOnly = $false
+```
 - use the the example json file for the custom detection rule: **complianceAppVersionHKLM.json**
 - if you want to check for other software, modify the array specified on row 4. Make sure to adjust the json file accordingly.
 
@@ -35,11 +38,13 @@ Make sure to:
 - 1Password  = 9.10.9
 - Discord = 1.0.9015
 - Test App = 1.0.9015
+```
 Make sure to:
 - on row 5, set 
 > $userProfileApp = $true
 - on row 6, set 
 > $isAppInstallCheckOnly = $false
+```
 - use the the example json file for the custom detection rule: **complianceAppVersionHKCU.json**
 - if you want to check for other software, modify the array specified on row 4. Make sure to adjust the json file accordingly.
 
@@ -48,10 +53,12 @@ Make sure to:
 - Notepad++
 - Test App
 Make sure to:
+```
 - on row 5, set 
 > $userProfileApp = $false
 - on row 6, set 
 > $isAppInstallCheckOnly = $true
+```
 - use the the example json file for the custom detection rule: **complianceAppInstalledHKLM.json**
 - if you want to check for other software, modify the array specified on row 4. Make sure to adjust the json file accordingly.
 In this example, the device will be compliant if the software is NOT installed. The script will return True if the software is installed, and false if it isn't.
@@ -61,10 +68,12 @@ In this example, the device will be compliant if the software is NOT installed. 
 - Discord
 - Test App
 Make sure to:
+```
 - on row 5, set 
 > $userProfileApp = $true
 - on row 6, set 
 > $isAppInstallCheckOnly = $true
+```
 - use the the example json file for the custom detection rule: **complianceAppInstalledHKCU.json**
 - if you want to check for other software, modify the array specified on row 4. Make sure to adjust the json file accordingly.
 In this example, the device will be compliant if the software is NOT installed. The script will return True if the software is installed, and false if it isn't.
