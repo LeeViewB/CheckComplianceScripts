@@ -1,0 +1,46 @@
+{
+    "Rules":[ 
+        { 
+           "SettingName":"1Password",
+           "Operator":"IsEquals",
+           "DataType":"Boolean",
+           "Operand":false,
+           "MoreInfoUrl":"https://www.liviubarbat.info",
+           "RemediationStrings":[ 
+              { 
+                 "Language":"en_US",
+                 "Title":"1Password is installed.",
+                 "Description": "Please uninstall this software"
+              }
+           ]
+        },
+        { 
+           "SettingName":"Discord",
+           "Operator":"IsEquals",
+           "DataType":"Boolean",
+           "Operand":false,
+           "MoreInfoUrl":"https://www.liviubarbat.info",
+           "RemediationStrings":[ 
+              { 
+                 "Language": "en_US",
+                 "Title": "Discord is installed.",
+                 "Description": "Please uninstall this software"
+              }
+           ]
+        },
+        { 
+           "SettingName":"Test App Not Installed",
+           "Operator":"IsEquals",
+           "DataType":"Boolean",
+           "Operand":false,
+           "MoreInfoUrl":"https://www.liviubarbat.info",
+           "RemediationStrings":[ 
+              { 
+                 "Language": "en_US",
+                 "Title": "Test App Not Installed is installed.",
+                 "Description": "Please uninstall this software"
+              }
+           ]
+        }
+     ]
+}

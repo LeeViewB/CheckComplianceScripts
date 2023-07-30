@@ -1,0 +1,46 @@
+{
+    "Rules":[ 
+        { 
+           "SettingName":"Notepad++ (64-bit x64)",
+           "Operator":"IsEquals",
+           "DataType":"Boolean",
+           "Operand":false,
+           "MoreInfoUrl":"https://www.liviubarbat.info",
+           "RemediationStrings":[ 
+              { 
+                 "Language":"en_US",
+                 "Title":"Notepad+ (64-bit x64)+ is installed.",
+                 "Description": "Please uninstall this software"
+              }
+           ]
+        },
+        { 
+           "SettingName":"Google Chrome",
+           "Operator":"IsEquals",
+           "DataType":"Boolean",
+           "Operand":false,
+           "MoreInfoUrl":"https://www.liviubarbat.info",
+           "RemediationStrings":[ 
+              { 
+                 "Language": "en_US",
+                 "Title": "Google Chrome x64 is installed.",
+                 "Description": "Please uninstall this software"
+              }
+           ]
+        },
+        { 
+           "SettingName":"Test App Not Installed",
+           "Operator":"IsEquals",
+           "DataType":"Boolean",
+           "Operand":false,
+           "MoreInfoUrl":"https://www.liviubarbat.info",
+           "RemediationStrings":[ 
+              { 
+                 "Language": "en_US",
+                 "Title": "Test App Not Installed is installed.",
+                 "Description": "Please uninstall this software"
+              }
+           ]
+        }
+     ]
+}

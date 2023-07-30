@@ -1,0 +1,46 @@
+{
+    "Rules":[ 
+        { 
+           "SettingName":"1Password",
+           "Operator":"GreaterEquals",
+           "DataType":"Version",
+           "Operand":"9.10.9",
+           "MoreInfoUrl":"https://www.liviubarbat.info",
+           "RemediationStrings":[ 
+              { 
+                 "Language":"en_US",
+                 "Title":"1Password is outdated. Value discovered was {ActualValue}.",
+                 "Description": "Make sure to patch 1Password"
+              }
+           ]
+        },
+        { 
+           "SettingName":"Discord",
+           "Operator":"GreaterEquals",
+           "DataType":"Version",
+           "Operand":"1.0.9015",
+           "MoreInfoUrl":"https://www.liviubarbat.info",
+           "RemediationStrings":[ 
+              { 
+                 "Language":"en_US",
+                 "Title":"Discord is outdated. Value discovered was {ActualValue}.",
+                 "Description": "Make sure to patch Discord"
+              }
+           ]
+        },
+        { 
+           "SettingName":"Test App",
+           "Operator":"GreaterEquals",
+           "DataType":"Version",
+           "Operand":"1.0.9015",
+           "MoreInfoUrl":"https://www.liviubarbat.info",
+           "RemediationStrings":[ 
+              { 
+                 "Language":"en_US",
+                 "Title":"Test App is outdated. Value discovered was {ActualValue}.",
+                 "Description": "Make sure to patch Test App"
+              }
+           ]
+        }
+     ]
+}
