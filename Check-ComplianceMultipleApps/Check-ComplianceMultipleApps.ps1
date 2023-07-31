@@ -3,16 +3,16 @@
 #[array]$applicationName = @("1Password","Discord","Test App") #example user apps installed in HKCU
 [array]$applicationName = @("Notepad++ (64-bit x64)","Google Chrome","Test App") #example machine wide apps installed in HKLM
 [bool]$userProfileApp = $false # Switch to true if you want the script to check for app info in HKCU instead of HKLM
-[bool]$isAppInstallCheckOnly = $true # if false, it will check only if the app exists. if true, it will only check if the app is installed or not
+[bool]$isAppInstallCheckOnly = $false # if false, it will check only if the app exists. if true, it will only check if the app is installed or not
 
 # --------------------------------------
 # DO NOT EDIT THE LINES BELOW
 # --------------------------------------
 
 $appInfo = @()
+[array]$myAppRegEntries = @()
 $appInfo = ForEach ($application in $applicationName) {
-    If(-not($isAppInstallCheckOnly -eq $true)){
-        [array]$myAppRegEntries = @()
+    If(-not($isAppInstallCheckOnly -eq $true)){        
         If ($userProfileApp) {
             # Search HKCU for a user-based app install            
             # Testing the reg path for user based apps, if there are none, the path will not exist.
