@@ -9,8 +9,8 @@
            "RemediationStrings":[ 
               { 
                  "Language":"en_US",
-                 "Title":"Notepad+ (64-bit x64)+ is outdated. Value discovered was {ActualValue}.",
-                 "Description": "Make sure to patch Notepad++"
+                 "Title":"Notepad+ (64-bit x64)+ is outdated or not installed. Value discovered was {ActualValue}.",
+                 "Description": "Make sure to install or update Notepad++"
               }
            ]
         },
@@ -23,8 +23,8 @@
            "RemediationStrings":[ 
               { 
                  "Language": "en_US",
-                 "Title": "Google Chrome x64 is outdated.Value discovered was {ActualValue}.",
-                 "Description": "Make sure to patch Google Chrome"
+                 "Title": "Google Chrome x64 is outdated or not installed. Value discovered was {ActualValue}.",
+                 "Description": "Make sure to install or update Google Chrome"
               }
            ]
         },
@@ -37,8 +37,8 @@
            "RemediationStrings":[ 
               { 
                  "Language": "en_US",
-                 "Title": "Test App is outdated.Value discovered was {ActualValue}.",
-                 "Description": "Make sure to patch it"
+                 "Title": "Test App is outdated or not installed. Value discovered was {ActualValue}.",
+                 "Description": "Make sure to install or update Test App"
               }
            ]
         }

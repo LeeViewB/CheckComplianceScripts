@@ -9,8 +9,8 @@
            "RemediationStrings":[ 
               { 
                  "Language":"en_US",
-                 "Title":"1Password is outdated. Value discovered was {ActualValue}.",
-                 "Description": "Make sure to patch 1Password"
+                 "Title":"1Password is outdated or not installed. Value discovered was {ActualValue}.",
+                 "Description": "Make sure to install or update 1Password"
               }
            ]
         },
@@ -23,8 +23,8 @@
            "RemediationStrings":[ 
               { 
                  "Language":"en_US",
-                 "Title":"Discord is outdated. Value discovered was {ActualValue}.",
-                 "Description": "Make sure to patch Discord"
+                 "Title":"Discord is outdated or not installed. Value discovered was {ActualValue}.",
+                 "Description": "Make sure to install or update Discord"
               }
            ]
         },
@@ -37,8 +37,8 @@
            "RemediationStrings":[ 
               { 
                  "Language":"en_US",
-                 "Title":"Test App is outdated. Value discovered was {ActualValue}.",
-                 "Description": "Make sure to patch Test App"
+                 "Title":"Test App is outdated or not installed. Value discovered was {ActualValue}.",
+                 "Description": "Make sure to install or update Test App"
               }
            ]
         }
