@@ -1,7 +1,7 @@
 {
     "Rules":[ 
         { 
-           "SettingName":"1Password",
+           "SettingName":"1Password Installed",
            "Operator":"IsEquals",
            "DataType":"Boolean",
            "Operand":false,
@@ -15,7 +15,7 @@
            ]
         },
         { 
-           "SettingName":"Discord",
+           "SettingName":"Discord Installed",
            "Operator":"IsEquals",
            "DataType":"Boolean",
            "Operand":false,
@@ -29,7 +29,7 @@
            ]
         },
         { 
-           "SettingName":"Test App Not Installed",
+           "SettingName":"Test App Installed",
            "Operator":"IsEquals",
            "DataType":"Boolean",
            "Operand":false,
@@ -37,7 +37,7 @@
            "RemediationStrings":[ 
               { 
                  "Language": "en_US",
-                 "Title": "Test App Not Installed is installed.",
+                 "Title": "Test App is installed.",
                  "Description": "Please uninstall this software"
               }
            ]

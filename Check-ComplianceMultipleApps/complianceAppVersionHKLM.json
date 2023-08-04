@@ -1,19 +1,5 @@
 {
-    "Rules":[ 
-        { 
-           "SettingName":"Notepad++ (64-bit x64)",
-           "Operator":"GreaterEquals",
-           "DataType":"Version",
-           "Operand":"9.5.4",
-           "MoreInfoUrl":"https://www.liviubarbat.info",
-           "RemediationStrings":[ 
-              { 
-                 "Language":"en_US",
-                 "Title":"Notepad+ (64-bit x64)+ is outdated or not installed. Value discovered was {ActualValue}.",
-                 "Description": "Make sure to install or update Notepad++"
-              }
-           ]
-        },
+    "Rules":[        
         { 
            "SettingName":"Google Chrome",
            "Operator":"GreaterEquals",
@@ -32,7 +18,7 @@
            "SettingName":"Test App",
            "Operator":"GreaterEquals",
            "DataType":"Version",
-           "Operand":"116.0.5790.110",
+           "Operand":"11.0.5790.110",
            "MoreInfoUrl":"https://www.liviubarbat.info",
            "RemediationStrings":[ 
               { 

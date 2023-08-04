@@ -1,9 +1,9 @@
 ## make sure to enter the exact display name shown in Add Remove Programs.
 ## While you can use wildcards to search for software, the exact display name discovered in appwiz.cpl will be used as the Setting Name for the json compliance check rule
 #[array]$applicationName = @("1Password","Discord","Test App") #example user apps installed in HKCU
-[array]$applicationName = @("Notepad++ (64-bit x64)","Google Chrome","Test App") #example machine wide apps installed in HKLM
+[array]$applicationName = @("Google Chrome","Test App") #example machine wide apps installed in HKLM
 [bool]$userProfileApp = $false # Switch to true if you want the script to check for app info in HKCU instead of HKLM
-[bool]$isAppInstallCheckOnly = $false # if false, it will check only if the app exists. if true, it will only check if the app is installed or not
+[bool]$isAppInstallCheckOnly = $true # if false, it will check only if the app exists. if true, it will only check if the app is installed or not
 
 # -----------------------------------
 # DO NOT EDIT THE LINES BELOW
@@ -56,7 +56,7 @@ If ($userProfileApp) {
                 break  # No need to check further once found
             }
         }
-        
+        $application = $application + " Installed"
         @{
             $application = $appInstalled
         }
@@ -72,5 +72,4 @@ foreach ($app in $appInfo) {
 }
 
 $hash = $customObject
-
 return $hash | ConvertTo-Json -Compress

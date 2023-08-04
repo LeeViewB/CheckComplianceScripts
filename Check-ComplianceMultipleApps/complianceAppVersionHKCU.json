@@ -1,7 +1,7 @@
 {
     "Rules":[ 
         { 
-           "SettingName":"1Password",
+           "SettingName":"1Password Installed",
            "Operator":"GreaterEquals",
            "DataType":"Version",
            "Operand":"9.10.9",
@@ -15,7 +15,7 @@
            ]
         },
         { 
-           "SettingName":"Discord",
+           "SettingName":"Discord Installed",
            "Operator":"GreaterEquals",
            "DataType":"Version",
            "Operand":"1.0.9015",
@@ -29,7 +29,7 @@
            ]
         },
         { 
-           "SettingName":"Test App",
+           "SettingName":"Test App Installed",
            "Operator":"GreaterEquals",
            "DataType":"Version",
            "Operand":"1.0.9015",
