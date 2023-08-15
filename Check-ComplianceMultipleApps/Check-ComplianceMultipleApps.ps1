@@ -3,7 +3,7 @@
 #[array]$applicationName = @("1Password","Discord","Test App") #example user apps installed in HKCU
 [array]$applicationName = @("Google Chrome","Test App") #example machine wide apps installed in HKLM
 [bool]$userProfileApp = $false # Switch to true if you want the script to check for app info in HKCU instead of HKLM
-[bool]$isAppInstallCheckOnly = $false # if false, it will check only if the app exists. if true, it will only check if the app is installed or not
+[bool]$isAppInstallCheckOnly = $false # if false, it will check the version of this app. if not installed, it will return 0.0.0.0. if true, it will only check if the app is installed or not
 
 # -----------------------------------
 # DO NOT EDIT THE LINES BELOW
