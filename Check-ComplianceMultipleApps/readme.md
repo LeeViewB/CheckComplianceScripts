@@ -1,5 +1,13 @@
 # SYNOPSIS
 
+## GUI - Check-ComplianceMultipleAppsFilesGenerator.exe
+
+The GUI allows you generate the ps1 and json files you'd like to use for compliance checks. It allows you to:
+- add your apps you'd like to check
+- select if you want to check a version or just the presence of an app
+- if you want it to check HKLM or HKCU
+- export the files for you.
+
 ## Check-ComplianceMultipleApps.ps1
 The script will allow you to do 4 different compliance checks for one or multiple apps. Scroll down for Examples.
 - on row 3 type in the application names in the array based on the example mentioned in the script.
