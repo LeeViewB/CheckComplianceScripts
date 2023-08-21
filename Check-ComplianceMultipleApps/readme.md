@@ -30,7 +30,6 @@ The script will allow you to do 4 different compliance checks for one or multipl
 ### 1. If you want to ensure that the installed **version** of the following software installed in **HKLM** is equal to or newer:
 
 - Google Chrome  = 116.0.5790.110
-- Notepad++ = 9.5.4
 - Test App  = 116.0.5790.110
 Make sure to:
 ```
@@ -41,6 +40,8 @@ Make sure to:
 ```
 - use the the example json file for the custom detection rule: **complianceAppVersionHKLM.json**
 - if you want to check for other software, modify the array specified on row 4. Make sure to adjust the json file accordingly.
+
+![CheckAppVersionHKLM](https://raw.githubusercontent.com/LeeViewB/CheckComplianceScripts/main/Check-ComplianceMultipleApps/Example%20-%20Screenshots/CheckAppVersion%20-%20HKLM.png)
 
 ### 2. If you want to ensure that the installed **version** of the following software installed in **HKCU** is equal to or newer:
 - 1Password  = 9.10.9
@@ -56,9 +57,10 @@ Make sure to:
 - use the the example json file for the custom detection rule: **complianceAppVersionHKCU.json**
 - if you want to check for other software, modify the array specified on row 4. Make sure to adjust the json file accordingly.
 
+![CheckAppVersionHKCU](https://github.com/LeeViewB/CheckComplianceScripts/blob/main/Check-ComplianceMultipleApps/Example%20-%20Screenshots/CheckAppVersion%20%20-%20HKCU.png?raw=true)
+
 ### 3. If you want to ensure that the software is NOT installed at all on the device for software that writes uninstall information in **HKLM**:
 - Google Chrome
-- Notepad++
 - Test App
 Make sure to:
 ```
@@ -70,6 +72,8 @@ Make sure to:
 - use the the example json file for the custom detection rule: **complianceAppInstalledHKLM.json**
 - if you want to check for other software, modify the array specified on row 4. Make sure to adjust the json file accordingly.
 In this example, the device will be compliant if the software is NOT installed. The script will return True if the software is installed, and false if it isn't.
+
+![CheckAppPresenceHKLM](https://github.com/LeeViewB/CheckComplianceScripts/blob/main/Check-ComplianceMultipleApps/Example%20-%20Screenshots/CheckAppPresence%20-%20HKLM.png?raw=true)
 
 ### 4. If you want to ensure that the software is NOT installed at all on the device for software that writes uninstall information in **HKCU**:
 - 1Password
@@ -85,3 +89,5 @@ Make sure to:
 - use the the example json file for the custom detection rule: **complianceAppInstalledHKCU.json**
 - if you want to check for other software, modify the array specified on row 4. Make sure to adjust the json file accordingly.
 In this example, the device will be compliant if the software is NOT installed. The script will return True if the software is installed, and false if it isn't.
+
+![CheckAppPresenceHKCU](https://github.com/LeeViewB/CheckComplianceScripts/blob/main/Check-ComplianceMultipleApps/Example%20-%20Screenshots/CheckAppPresence%20-%20HKCU.png?raw=true)
