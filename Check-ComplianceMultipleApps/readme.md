@@ -8,6 +8,8 @@ The GUI allows you generate the ps1 and json files you'd like to use for complia
 - if you want it to check HKLM or HKCU
 - export the files for you.
 
+> **Note:** The EXE is unsigned, I don't have a code-signing certificate. Defender will complain, test it in a Sandbox.
+
 ## Check-ComplianceMultipleApps.ps1
 The script will allow you to do 4 different compliance checks for one or multiple apps. Scroll down for Examples.
 - on row 3 type in the application names in the array based on the example mentioned in the script.
@@ -34,9 +36,9 @@ The script will allow you to do 4 different compliance checks for one or multipl
 Make sure to:
 ```
 - on row 5, set 
-> $userProfileApp = $false
+$userProfileApp = $false
 - on row 6, set 
-> $isAppInstallCheckOnly = $false
+$isAppInstallCheckOnly = $false
 ```
 - use the the example json file for the custom detection rule: **complianceAppVersionHKLM.json**
 - if you want to check for other software, modify the array specified on row 4. Make sure to adjust the json file accordingly.
@@ -50,9 +52,9 @@ Make sure to:
 ```
 Make sure to:
 - on row 5, set 
-> $userProfileApp = $true
+$userProfileApp = $true
 - on row 6, set 
-> $isAppInstallCheckOnly = $false
+$isAppInstallCheckOnly = $false
 ```
 - use the the example json file for the custom detection rule: **complianceAppVersionHKCU.json**
 - if you want to check for other software, modify the array specified on row 4. Make sure to adjust the json file accordingly.
@@ -65,9 +67,9 @@ Make sure to:
 Make sure to:
 ```
 - on row 5, set 
-> $userProfileApp = $false
+$userProfileApp = $false
 - on row 6, set 
-> $isAppInstallCheckOnly = $true
+$isAppInstallCheckOnly = $true
 ```
 - use the the example json file for the custom detection rule: **complianceAppInstalledHKLM.json**
 - if you want to check for other software, modify the array specified on row 4. Make sure to adjust the json file accordingly.
@@ -82,9 +84,9 @@ In this example, the device will be compliant if the software is NOT installed. 
 Make sure to:
 ```
 - on row 5, set 
-> $userProfileApp = $true
+$userProfileApp = $true
 - on row 6, set 
-> $isAppInstallCheckOnly = $true
+$isAppInstallCheckOnly = $true
 ```
 - use the the example json file for the custom detection rule: **complianceAppInstalledHKCU.json**
 - if you want to check for other software, modify the array specified on row 4. Make sure to adjust the json file accordingly.
